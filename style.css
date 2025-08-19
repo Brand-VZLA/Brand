@@ -105,9 +105,15 @@ input[name="BAR"] {position: absolute; visibility: hidden;}
 }
 
 .SECT2-NAV2 {margin: 100px 0px;}
-.SECT2-NAV2-SCROLL-img {display: flex; align-content: center; justify-content: center;}
-.SECT2-NAV2-SCROLL {background: linear-gradient(var(--COLOR1),transparent); border-radius: 5%;}
-#CAT1-img {width: 150px; transition: 0.1s ease-in-out;}
+.SECT2-NAV2-SCROLL {
+    background: linear-gradient(var(--COLOR1),transparent);
+    border-radius: 5%; height: 400px;
+    overflow-y: auto;}
+
+.SECT2-NAV2-SCROLL-img {display: flex;
+    align-content: center; justify-content: center;}
+
+#CAT1-img {width: 150px; transition: 0.1s ease-in-out; cursor: pointer;}
 .CAT-TXT {display: inline-block; align-self: center;
     position: relative; bottom: 10px;
     visibility: hidden; font-style: oblique;
