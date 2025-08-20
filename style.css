@@ -120,9 +120,14 @@ visibility: hidden; font-style: oblique;
 width: 0; margin: 0;
 transition: 0.1s ease-in-out;}
 
-@media screen and (min-device-width: 600px) {
+@media (min-width: 1024px) {
     #CAT1-img:active ~ .CAT-TXT {visibility: visible; width: 100px;}
     #CAT1-img:active {width: 250px;}
+}
+
+@media (max-width: 1024px) {
+    #CAT1-img:hover ~ .CAT-TXT {visibility: visible; width: 100px;}
+    #CAT1-img:hover {width: 250px;}
 }
 
 /*----------------------------------------------*/
